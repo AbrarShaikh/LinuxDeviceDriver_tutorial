@@ -70,3 +70,6 @@ For example, %.o: %.c means any .o file depends on the corresponding .c file.
 
 4. Conditional Statements:
 - ifeq, ifneq, ifdef, ifndef for conditional parts of the Makefile.
+
+Reference\
+https://www.gnu.org/software/make/manual/make.html
