@@ -10,3 +10,7 @@ project(MyProject)
 # Add an executable
 add_executable(myapp main.cpp)
 ```
+1. ```CMakeLists.txt```: This is a text file placed at the root of your project source directory. It contains instructions written in CMake's own scripting language, specifying how to build your project.
+2. ```Generators```: CMake acts as a frontend, generating native build system files based on the specified generator. Common generators include Unix Makefiles, Visual Studio project files, Xcode project files, and more.
+3. ```Variables```: CMake allows defining and using variables to store project information, paths, compiler flags, etc. This simplifies managing configuration and makes your CMakeLists.txt more adaptable.
+4. ```Commands```: CMake provides a rich set of commands for various build tasks. These include finding libraries, setting compiler flags, defining targets (executables, libraries), and more.
