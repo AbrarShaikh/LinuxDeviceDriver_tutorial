@@ -38,6 +38,7 @@
 ### Segmentation
 - Segmentation is a technique to break memory into logical pieces where each piece represents a group of related information
 - Segmentation divides processes into smaller subparts known as modules. The divided segments need not be placed in contiguous memory.
+- Segmentation solves issue in paging where a function or piece of code is divided into pages without considering that the relative parts of code can also get divided. Hence, for the process in execution, the CPU must load more than one page into the frames so that the complete related code is there for execution.
   
 ### Swapping
 - Swapping is a mechanism in which a process can be swapped temporarily out of main memory to a backing store,
