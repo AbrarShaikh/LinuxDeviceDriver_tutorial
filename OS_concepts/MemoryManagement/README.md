@@ -38,7 +38,7 @@
 ### Segmentation
 - Segmentation is a technique to break memory into logical pieces where each piece represents a group of related information
 - Segmentation divides processes into smaller subparts known as modules. The divided segments need not be placed in contiguous memory.
-- 
+  
 ### Swapping
 - Swapping is a mechanism in which a process can be swapped temporarily out of main memory to a backing store,
 - And then brought back into memory for continued execution.
@@ -48,4 +48,10 @@
 ## Virtual Memory
 - is a storage allocation scheme in which secondary memory can be addressed as though it were part of the main memory.
 - Virtual Memory is a storage allocation scheme in which secondary memory can be addressed as though it were part of the main memory.
-- 
+- technique that allows the execution of processes which are not completely available in memory.
+- advantage of this scheme is that programs can be larger than physical memory.
+- Virtual memory is the separation of user logical memory from physical memory.
+
+### Thrashing
+- Thrashing refers to a situation where the system spends a significant amount of time and resources continuously swapping pages between physical memory (RAM) and secondary storage due toexcessive paging activity.
+- In thrashing, the system is busy moving pages in and out of memory rather than executing useful work, leading to severe degradation in performance.
