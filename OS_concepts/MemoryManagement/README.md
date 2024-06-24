@@ -11,11 +11,25 @@
 - The run-time mapping from virtual to physical address is done by the memory management unit (MMU)
 
 ## Contiguous Memory Management Technique
-## Fixed/static partitioning 
+### Fixed/static partitioning 
 - In fixed partitioning, memory is divided into fixed-sized partitions or blocks (non-overlapping), and each partition is assigned to a specific process or task.
 - The size of each partition may or may not be the same
 - The system allocates a predetermined amount of memory to each partition, which remains fixed throughout the execution.
 - Fixed partitioning is relatively simple to implement and provides fast memory allocation. 
 - However, it can lead to inefficient memory utilization due to fragmentation, especially when processes have varying memory
 
-## Variable/dynamic partitioning 
+### Variable/dynamic partitioning 
+- partitions are made during the run-time according to the process’s need instead of partitioning during system configuration.
+- size of the partition will be equal to the incoming process.
+- partition size varies according to the need of the process so that internal fragmentation can be avoided to ensure efficient utilization of RAM.
+- number of partitions in RAM is not fixed and depends on the number of incoming processes and the Main Memory’s size.
+- External Fragmentation: There will be external fragmentation despite the absence of internal fragmentation.
+- Difficult Implementation
+
+## Non-Contiguous Memory Management Technique
+- Non-contiguous allocation involves the use of pointers to link the non-contiguous memory blocks allocated to a process. 
+### Paging
+- Paging is a technique in which physical memory is broken into blocks of the same size called pages (size is power of 2, between 512 bytes and 8192 bytes).
+- Process of retrieving processes in the form of pages from the secondary storage into the main memory is known as paging.
+- When a process is to be executed, it's corresponding pages are loaded into any available memory frames.
+- pages can be stored at the different locations of the memory but the priority is always to find the contiguous frames
