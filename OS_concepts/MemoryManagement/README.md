@@ -27,9 +27,14 @@
 - Difficult Implementation
 
 ## Non-Contiguous Memory Management Technique
-- Non-contiguous allocation involves the use of pointers to link the non-contiguous memory blocks allocated to a process. 
+- Non-contiguous allocation involves the use of ```pointers to link``` the non-contiguous memory blocks allocated to a process. 
 ### Paging
 - Paging is a technique in which physical memory is broken into blocks of the same size called pages (size is power of 2, between 512 bytes and 8192 bytes).
 - Process of retrieving processes in the form of pages from the secondary storage into the main memory is known as paging.
 - When a process is to be executed, it's corresponding pages are loaded into any available memory frames.
 - pages can be stored at the different locations of the memory but the priority is always to find the contiguous frames
+
+### Segmentation
+- Segmentation is a technique to break memory into logical pieces where each piece represents a group of related information
+- Segmentation divides processes into smaller subparts known as modules. The divided segments need not be placed in contiguous memory.
+- 
