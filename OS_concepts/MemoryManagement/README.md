@@ -39,3 +39,13 @@
 - Segmentation is a technique to break memory into logical pieces where each piece represents a group of related information
 - Segmentation divides processes into smaller subparts known as modules. The divided segments need not be placed in contiguous memory.
 - 
+### Swapping
+- Swapping is a mechanism in which a process can be swapped temporarily out of main memory to a backing store,
+- And then brought back into memory for continued execution.
+- interchange of data between virtual memory and real memory is called swapping and space on disk as “swap space”.
+- Swap space, also known as virtual memory or paging space,
+
+## Virtual Memory
+- is a storage allocation scheme in which secondary memory can be addressed as though it were part of the main memory.
+- Virtual Memory is a storage allocation scheme in which secondary memory can be addressed as though it were part of the main memory.
+- 
