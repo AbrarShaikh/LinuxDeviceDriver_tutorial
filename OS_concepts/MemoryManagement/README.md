@@ -33,6 +33,7 @@
 - Process of retrieving processes in the form of pages from the secondary storage into the main memory is known as paging.
 - When a process is to be executed, it's corresponding pages are loaded into any available memory frames.
 - pages can be stored at the different locations of the memory but the priority is always to find the contiguous frames
+- Unlike paging, segment is having varying sizes and thus eliminates internal fragmentation. External fragmentation still exists but to lesser extent.
 
 ### Segmentation
 - Segmentation is a technique to break memory into logical pieces where each piece represents a group of related information
