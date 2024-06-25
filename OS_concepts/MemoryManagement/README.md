@@ -50,9 +50,20 @@
 - is a storage allocation scheme in which secondary memory can be addressed as though it were part of the main memory.
 - Virtual Memory is a storage allocation scheme in which secondary memory can be addressed as though it were part of the main memory.
 - technique that allows the execution of processes which are not completely available in memory.
+- When a program needs more memory than is available in RAM, it temporarily moves some data to the secondary storage. This allows the computer to run larger programs and handle multiple tasks at once.
 - advantage of this scheme is that programs can be larger than physical memory.
 - Virtual memory is the separation of user logical memory from physical memory.
 
 ### Thrashing
 - Thrashing refers to a situation where the system spends a significant amount of time and resources continuously swapping pages between physical memory (RAM) and secondary storage due toexcessive paging activity.
 - In thrashing, the system is busy moving pages in and out of memory rather than executing useful work, leading to severe degradation in performance.
+
+## Fragmentation
+-  occurs when most of your available memory is allocated in a large number of non-contiguous blocks or chunks, leaving a significant portion of memory unallocated but unusable for typical scenarios.
+### External Fragmentation
+- fragmentation occurs when there is sufficient total memory space to satisfy a request, but the available memory is divided into small pieces, making it unusable for larger requests.
+- Cause: frequently allocate and deallocate different sizes of memory, leading to gaps between allocated blocks.
+### Internal Fragmentation
+- Memory block assigned to process is bigger. Some portion of memory is left unused as it cannot be used by another process.
+- when memory blocks are larger than the data being stored in them, resulting in wasted space within each block.
+- allocated block is larger than the requested memory, leading to wasted space within the allocated block.
